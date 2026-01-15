@@ -48,9 +48,9 @@ const usuarioLogueado = localStorage.getItem("usuarioLogueado");
 // Protección de páginas
 const paginaProtegida =
     window.location.pathname.includes("menu.html") ||
-    window.location.pathname.includes("deposito.html") ||
-    window.location.pathname.includes("transferir.html") ||
-    window.location.pathname.includes("transacciones.html");
+    window.location.pathname.includes("deposit.html") ||
+    window.location.pathname.includes("sendmoney.html") ||
+    window.location.pathname.includes("transactions.html");
 
 if (paginaProtegida && !usuarioLogueado) {
     window.location.href = "login.html";
