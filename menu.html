@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alke Wallet - Menú</title>
+    <!--Web Responsiva-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Iconos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS de estilos -->
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <!--Menu-->
+    <main class="d-flex justify-content-center">
+        <!--Crear contenedor general con margen top 5-->
+        <div class="container mt-5">
+            <!--Tarjeta menu-->
+            <div class="tarjeta-menu">
+                <!-- Tarjeta usuario conectado y saldo -->
+                <div class="card text-center mt-4 w-100">
+                    <div class="card-body">
+                        <div class="row align-items-center mt-2">
+                            <!--imagen usuario-->
+                            <div class="col-4 d-flex justify-content-center">
+                                <img src="img/avatar.png" class="borde_avatar" alt="Icono de usuario" width="50">
+                            </div>
+                            <!--Saludo al usuario-->
+                            <div class="col-4 d-flex justify-content-center">
+                                <h1 id="saludo">Hola, <span id="usuario"></span></h1>
+                            </div>
+                            <!--Icono notificaciones-->
+                            <div class="col-4 d-flex justify-content-center">
+                                <img src="img/notificaciones1.png" class="borde_notificaciones"
+                                    alt="Icono notificaciones" width="50">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!--Saldo disponible-->
+                            <div class="col-12">
+                                <h2>Saldo disponible</h2>
+                            </div>
+                            <!--Monto saldo-->
+                            <div class="col-12">
+                                <p id="saldo">$0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Navegador de acciones-->
+                <div class="enlaces-acciones">
+                    <!--Enlace deposito-->
+                    <a href="deposito.html">
+                        <i class="bi bi-wallet2"></i>
+                        <span>Depósito</span>
+                    </a>
+                    <!--Enlace transferir-->
+                    <a href="transferir.html">
+                        <i class="bi bi-arrow-left-right"></i>
+                        <span>Transferir</span>
+                    </a>
+                    <!--Enlace ver movimientos-->
+                    <a href="transacciones.html">
+                        <i class="bi bi-clock-history"></i>
+                        <span>Movimientos</span>
+                    </a>
+                    <!--Enlace cerrar sesión-->
+                    <a href="#" id="salir">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Salir</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p class="text-center mt-4">&copy; 2024 Alke Wallet. <em>Todos los derechos reservados.</em></p>
+    </footer>
+
+    <!--Boostrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!--JS interactividad-->
+    <script src="JS/interactividad.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <!--Web Responsiva-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Alke Wallet - Login</title>
+    <!--Boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--CSS de estilos-->
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <!--Menu activa flexbox para responsividad, elementos justificado y centrados-->
+    <main class="d-flex justify-content-center align-items-center">
+        <!--Crear contenedor con centrado horizontal y vertical, usa ancho total y se activa flexbox-->
+        <div class="container">
+
+            <!--tarjeta Login con bootstrap, padding4, sombra y tarjeta no tan grande y 100% de ancho-->
+            <div class="card p-4 shadow mx-auto" style="max-width: 400px; width: 100%;">
+
+                <!--Título, centrado y con espacio abajo-->
+                <h1 class="text-center mb-3">Alke Wallet</h1>
+
+                <!--Formulario Login-->
+                <form id="loginFormulario">
+                    <!--Correo-->
+                    <div class="mb-3">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" class="form-control" placeholder="Ingresa tu email">
+                    </div>
+                    <!--Contraseña-->
+                    <div class="mb-3">
+                        <label for="contrasenia">Contraseña</label>
+                        <input type="password" id="contrasenia" class="form-control" placeholder="Ingresa tu contraseña"
+                            required>
+                    </div>
+                    <!--Boton enviar-->
+                    <button type="submit" class="btn btn-primary w-100 botones">Iniciar sesión</button>
+                    <!--Mensaje de error, en caso de no poder entrar-->
+                    <p id="error" class="text-danger text-center mt-2"></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p class="text-center mt-4">&copy; 2024 Alke Wallet. <em>Todos los derechos reservados.</em></p>
+    </footer>
+
+    <!--Boostrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!--JS propio-->
+    <script src="JS/interactividad.js"></script>
+</body>
+
+</html>

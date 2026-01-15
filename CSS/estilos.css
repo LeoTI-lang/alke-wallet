@@ -1,0 +1,267 @@
+/*------------------------------------------*/
+/*ESTILO DEL GENERALES*/
+/*------------------------------------------*/
+/*Estilo reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Estilo altura completa*/
+html,
+body {
+    height: 100%;
+}
+/*Estilo Body*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ceb5ff;
+    display: flex;
+    flex-direction: column;
+}
+/*Estilo main*/
+main {
+    flex: 1;
+}
+/*Estilo tarjeta tarjetas*/
+.card {
+    border: 2px solid #742ffa;
+    border-radius: 12px;
+}
+/*estilo de los labels*/
+label {
+    font-weight: bold;
+    color: #6f578a;
+    font-size: large;
+}
+/*Estilo del título h1*/
+h1 {
+    font-weight: bold;
+    color: #742ffa;
+}
+/*Estilo del título h2*/
+h2 {
+    font-weight: bold;
+    color: #6f578a;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+/*Estilo de los inputs*/
+input {
+    height: 45px;
+    border-radius: 8px;
+}
+/*Estilo boton iniciar sesión*/
+.botones {
+    background-color: #742ffa;
+    border: none;
+}
+/*estilo boton al pasar el mouse por encima*/
+.botones:hover {
+    background-color: #301369;
+}
+/*estilo enlaces*/
+.btn-link {
+    text-decoration: none;
+}
+/*Estilo boton volver al menu*/
+#volverMenu {
+    color: #742ffa;
+    border: none;
+}
+/*Estilo boton volver al menu al pasar el mouse por encima*/
+#volverMenu:hover {
+    color: #301369;
+    border: none;
+}
+/* Estilo boton volver al menu al hacer foco*/
+#volverMenu:focus {
+    box-shadow: none;
+}
+/*Estilo strong*/
+strong {
+    color: #742ffa;
+}
+/*Quitar azul por defecto y usar morado */
+.btn-primary:focus,
+.btn-primary:focus-visible {
+    background-color: #301369;
+    color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 2px #742ffa;
+}
+.btn-success:focus,
+.btn-success:focus-visible {
+    background-color: #301369;
+    color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 2px #742ffa;
+}
+.form-control:focus,
+.form-control:focus-visible {
+    border-color: #742ffa;
+    box-shadow: 0 0 0 0.2rem rgba(116, 47, 250, 0.25);
+}
+.form-select:focus,
+.form-select:focus-visible {
+    border-color: #742ffa;
+    box-shadow: 0 0 0 0.2rem rgba(116, 47, 250, 0.25);
+}
+.list-group-item-action:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(116, 47, 250, 0.25);
+}
+
+/*------------------------------------------*/
+/*ESTILO DEL LOGIN*/
+/*------------------------------------------*/
+/*Estilo mensaje de error*/
+#error {
+    font-size: 0.9rem;
+}
+
+/*------------------------------------------*/
+/*ESTILO DEL MENU*/
+/*------------------------------------------*/
+/*Estilo saldo*/
+#saldo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #742ffa;
+    margin-top: 0px;
+}
+
+/*Estilo saludo tarjeta menu*/
+#saludo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #742ffa;
+}
+
+/*Estilo borde imagene usuario */
+.borde_avatar {
+    border: 2px solid #742ffa;
+    border-radius: 50%;
+}
+/*Estilo notificaciones*/
+.borde_notificaciones {
+    border: 2px solid #742ffa;
+    border-radius: 30%;
+}
+/*Estilo tarjeta menu,con espacio en la barra*/
+.tarjeta-menu {
+    position: relative;
+    margin-bottom: 70px;
+    /* espacio para la barra */
+}
+/*Estilo barra de acciones*/
+.enlaces-acciones {
+    position: absolute;
+    bottom: -55px;
+    /* la pega debajo de la tarjeta */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: #742ffa;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+/*Estilo enlaces de acciones*/
+.enlaces-acciones a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+/*Estilo iconos de acciones*/
+.enlaces-acciones i {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+/*Estilo enlaces de acciones al pasar el mouse por encima*/
+.enlaces-acciones a:hover {
+    color: #09080c;
+}
+
+/*------------------------------------------*/
+/*ESTILO DE DEPOSITAR*/
+/*------------------------------------------*/
+/*Estilo boton depositar*/
+#botonDepositar {
+    background-color: #742ffa;
+    border: none;
+}
+/*Estilo boton depositar al pasar el mouse por encima*/
+#botonDepositar:hover {
+    background-color: #301369;
+}
+/*------------------------------------------*/
+/*ESTILO DE TRASNFERENCIA*/
+/*------------------------------------------*/
+/*Estilo nombre contactos al agregar a lista*/
+.contacto-nombre {
+    font-weight: bold;
+    color: #742ffa;
+    font-size: 15px;
+}
+/*Estilo alias contactos al agregar a lista*/
+.contacto-alias {
+    font-weight: normal;
+    font-size: 13px;
+    color: #6f578a;
+    margin-left: 4px;
+}
+/* Estilo banco, tipo cuenta y cuenta contacto */
+.contacto-detalle {
+    font-size: 12px;
+    color: #6c757d;
+}
+/*Estilo título transferencia*/
+.tituloTransferencia {
+    font-weight: bold;
+    color: #6f578a;
+    font-size: large;
+    margin-bottom: 10px;
+}
+/*Estilo elemento lista de contactos al pasar el mouse por encima*/
+.list-group-item-action:hover {
+    background-color: #f1eaff;
+    color: #742ffa;
+    cursor: pointer;
+    border-left: 4px solid #742ffa;
+}
+
+/*------------------------------------------*/
+/*ESTILO DE MOVIMIENTOS*/
+/*------------------------------------------*/
+/*Estilo mensaje no hay movimientos*/
+#noMovimientos {
+    font-weight: bold;
+    color: #6f578a;
+    font-size: large;
+    margin-top: 20px;
+}
+/*Estilo tarjeta movimiento*/
+#tarjetaMovimiento {
+    border: 1px solid #742ffa;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #edecec;
+    color: #6f578a;
+}
+
+/*Estilo responsive para pantalla menor a 767px*/
+/*el nombre del usuario pasa debajo de "Hola,"*/
+@media (max-width: 767px) {
+    #usuario {
+        display: block;
+        white-space: nowrap;
+    }
+}
